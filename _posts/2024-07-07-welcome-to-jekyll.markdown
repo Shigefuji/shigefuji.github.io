@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Welcome to Jekyll!"
 categories: jekyll update
 subtitle: "This is the post subtitle."

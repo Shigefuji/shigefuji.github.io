@@ -23,11 +23,11 @@ description: >-
 プログラミングの基本から応用までを学ぶブログ
 web関連プログラムは初心者です。
 C++、C#をかじったWindowsプログラマが未知の領域にトライしてます。
-theme: jekyll-theme-time-machine
+#theme: jekyll-theme-time-machine
 email: shigefuji@aol.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-blueSky_username: shigefuji.bluesky
+#blueSky_username: shigefuji.bluesky
 github_username:  shigefuji
 
 # Build settings

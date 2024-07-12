@@ -20,7 +20,14 @@ Vscodeで、pullする。ディレクトリが作成されるので、Dockerコ�
 https://docs.github.com/ja/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 詳しい情報はここにある。
 
-VsCodeからGithubにコミット同期をすると、Actionが動き公開される。
+VsCodeからGithubにコミット同期をすると、Web上でActionが動き公開される。
+Githubでサポートされているテーマは、限られている。Jekyllのバージョン3.9
+
+jekyllで最初に作成される、#theme: minimaとその他のテーマは構成が違うので注意
+スタイル　home、postとかは無いので、　defaultに変更する事。
+
+ローカルで動かすためには、GemFile、_config.ymlを変更する。
+
 
 
 
@@ -31,9 +38,3 @@ OS　：　Winodws　10
 ### 注意事項
 ※　GitHubPages対応のため、Jekyllのバージョンは、正式対応に合わせる事！
 ※　
-
-##　勘違いしていた思い込み
-
-
-
-Blog Page

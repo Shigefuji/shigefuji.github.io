@@ -18,11 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+name: Shigefuji's Blog
+markdown: kramdown
+
 title: プログラミング学習ブログ
 description: >-
   C++、C#をかじった程度のWindowsプログラマが、web関連プログラムや最近はやりの言語など未知の領域にトライしてます。
 #theme: jekyll-theme-time-machine
-email: shigefuji@aol.jp
+email: shigefuji@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #blueSky_username: shigefuji.bluesky

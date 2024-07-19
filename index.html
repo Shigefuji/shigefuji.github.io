@@ -1,8 +1,28 @@
+---
+layout: default
+title: Hank Quinlan, Horrible Cop
+---
+<div class="blurb">
+	<h1>Windowsプログラムを齧ったOld プログラマが挑戦する最近のプログラミング</h1>
+	<p>Webアプリケーション等の <em>プログラミングスキル向上用</em> のサイトです <a href="/about">私について</a></p>
+
+	<ul class="posts">
+
+		{% for post in site.posts %}
+		  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+		{% endfor %}
+	  </ul>
+</div><!-- /.blurb -->
+
+
+<!--
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>プログラミング学習プログ</title>
-        <!-- link to main stylesheet -->
+	-->
+        <!-- link to main stylesheet ―-->
+	<!--
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
@@ -18,8 +38,14 @@
     		<div class="blurb">
         		<h1>Windowsプログラムを齧ったOld プログラマが挑戦する最近のプログラミング</h1>
 				<p> Webアプリケーション等の <em>プログラミングスキル向上用のサイトです</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+    		</div>
+		--> 
+			<!-- /.blurb -->
+		<!--
+		</div>
+		-->
+		<!-- /.container -->
+		<!--
 		<footer>
     		<ul>
         		<li><a href="mailto:shigefuji@gmail.com">email</a></li>
@@ -28,3 +54,4 @@
 		</footer>
 	</body>
 </html>
+-->

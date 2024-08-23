@@ -23,24 +23,21 @@ ATProtoは、開発者向けに設計されたプロトコルで、分散型ア�
 
 1. **ATProtoライブラリのインストール**: Python用のATProtoライブラリをインストールして、開発環境をセットアップします。
     ```bash
-    pip install atproto-sdk
+    pip install atproto
     ```
    
 2. **初期設定**: Pythonでクライアントを初期化します。
     ```python
-    from atproto_sdk import AtpApi
-    
-    client = AtpApi(service='https://example.com')
+    from atproto import client
+
     ```
    
 3. **データの送受信**: ATProtoを使用してデータの送信と受信を行います。
     ```python
     # データを送信
-    response = client.post('/path/to/endpoint', json={'key': 'value'})
-    
-    # データを受信
-    response = client.get('/path/to/endpoint')
-    print(response.json())
+    api_client = Client(base_url='https://bsky.social')
+    api_client.login('username', 'password')
+    api_client.send_post("Hello")
     ```
 
 ## 4. 開発者向けのリソースと次のステップ

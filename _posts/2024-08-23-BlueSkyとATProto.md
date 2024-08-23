@@ -1,4 +1,5 @@
 
+
 # BlueSkyとATProtoの簡単なチュートリアル
 
 ## 1. BlueSkyとATProtoの概要
@@ -20,26 +21,26 @@
 
 ATProtoは、開発者向けに設計されたプロトコルで、分散型アプリケーションを構築するためのフレームワークを提供します。基本的な使用方法は以下の通りです。
 
-1. **ATProtoライブラリのインストール**: ATProto SDKをインストールして、開発環境をセットアップします。
+1. **ATProtoライブラリのインストール**: Python用のATProtoライブラリをインストールして、開発環境をセットアップします。
     ```bash
-    npm install atproto-sdk
+    pip install atproto-sdk
     ```
    
-2. **初期設定**: SDKを使用して、クライアントを初期化します。
-    ```javascript
-    const { AtpApi } = require('atproto-sdk');
-    const client = new AtpApi({ service: 'https://example.com' });
+2. **初期設定**: Pythonでクライアントを初期化します。
+    ```python
+    from atproto_sdk import AtpApi
+    
+    client = AtpApi(service='https://example.com')
     ```
    
 3. **データの送受信**: ATProtoを使用してデータの送信と受信を行います。
-    ```javascript
-    // データを送信
-    client.post('/path/to/endpoint', { key: 'value' });
-
-    // データを受信
-    client.get('/path/to/endpoint').then(response => {
-        console.log(response.data);
-    });
+    ```python
+    # データを送信
+    response = client.post('/path/to/endpoint', json={'key': 'value'})
+    
+    # データを受信
+    response = client.get('/path/to/endpoint')
+    print(response.json())
     ```
 
 ## 4. 開発者向けのリソースと次のステップ

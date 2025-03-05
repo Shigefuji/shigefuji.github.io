@@ -1,5 +1,5 @@
-# shigefuji.github.ioを構築メモ
-##　こんな構成にしたい
+# shigefuji.github.io 構築メモ
+### こんな構成にしたい
 様々な問題がある環境だが、これしかなかった。
 ※JekyllはWindowsを正式サポートしていない。
 開発はWondowsPCで行い、ローカルのVSCodeでコードやMDファイルを書き、
